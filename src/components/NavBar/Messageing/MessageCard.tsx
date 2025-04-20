@@ -259,7 +259,7 @@ const MessageCard = () => {
                                 <p className="truncate w-3/5 text-[14px] text-center font-Poppins text-black">
                                   {/* {d.content.pop().text} */}
                                   {Array.isArray(d.content) &&
-                                    (_.last(d.content)?.text as string)}
+                                    (_.last(d.content.text as string))}
                                 </p>
                               </div>
                               <span className="justify-end  text-[10px] font-bold font-Poppins text-[#777777]">
@@ -290,7 +290,7 @@ const MessageCard = () => {
                                 <p className="truncate w-3/5 text-[14px] text-center font-Poppins text-black">
                                   {/* {d.content.pop().text} */}
                                   {Array.isArray(d.content) &&
-                                    (_.last(d.content)?.text as string)}
+                                    (_.last(d.content?.text as string))}
                                 </p>
                               </div>
                               <span className="  justify-end  text-[10px]   font-bold font-Poppins text-[#777777]">
